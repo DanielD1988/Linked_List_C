@@ -77,7 +77,7 @@ void addNodeAtBegining(struct List** headPtr,char string[]) {//** Is memory addr
 		printf("Memory not allocated\n");
 	}
 	else {
-		strcpy(newNode->name, string);//copy string array to struct member array
+		strcpy(newNode->name, string);//copy char array to struct member array
 		newNode->next = (*headPtr);//Make newNode point to what head is currently pointing to
 		(*headPtr) = newNode;//Make the head pointer point to the newNode
 	}
@@ -94,7 +94,7 @@ void addNodeAtEnd(struct List** headPtr, char string[]) {
 	}
 	else {
 		struct List* lastNode = *headPtr;//Make a pointer to what headPtr is pointing to
-		strcpy(newNode->name, string);//copy string array to struct member array
+		strcpy(newNode->name, string);//copy char array to struct member array
 		newNode->next = NULL;
 		
 		if (*headPtr == NULL) {//Check if there are nodes in the list
