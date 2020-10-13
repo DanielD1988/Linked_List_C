@@ -1,6 +1,6 @@
 #include "Node.h"
 
-void addNodeAtBegining(struct List** headPtr, char string[]) {//** Is memory address to a pointer
+void addNodeAtBeginning(struct List** headPtr, char string[]) {//** Is memory address to a pointer
 
 	//Allocate dynamic memory for a new node in a linked list
 	struct List* newNode = (struct List*)malloc(sizeof(struct List));
