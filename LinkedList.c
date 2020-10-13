@@ -19,7 +19,7 @@ int main() {
 				getchar();//Removes new line 
 				puts("Enter a name to add to the begining of thelinked list max 99 characters");
 				fgets(string,99, stdin);
-				addNodeAtBegining(&head, string);//Memory address of the head pointer and an array of chars
+				addNodeAtBeginning(&head, string);//Memory address of the head pointer and an array of chars
 				break;
 			case 0x2:
 				getchar();
